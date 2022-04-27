@@ -43,15 +43,14 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('img/breaking_bad_capa.jpg');
-
-    height: 400px;
-    /*área de cobertura do background*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(25, 25, 24, 0.5) .100%), url("img/breaking_bad_capa.jpg");
     background-size: cover;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start; 
+    align-items: flex-start;
+    
 }
 
 .filme-principal .descricao{
@@ -96,7 +95,24 @@ header nav a:hover{
 }
 
 .box-filme{
+
     height: 100%;
     width: 100%;
     display: block;
+}
+.box-filme:hover{
+
+    height: 110%;
+    width: 110%;
+    transition: 2s;
+}
+
+.carrossel-filmes-populares{
+    margin-top: 5px;
+}
+
+.titulo-carrossel{
+  margin-left: 25px;
+  font-size: 20px;
+  padding-bottom: 5px;
 }
